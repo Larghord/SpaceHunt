@@ -2,22 +2,25 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c2yhfddmm0gp0"
-path.bptc="res://.godot/imported/space.png-19ea076092a889a84c8ba739be79ecf7.bptc.ctex"
+uid="uid://cujw825lr32y4"
+path.s3tc="res://.godot/imported/4Emplacement_1.png-91f0e4b2d0b283884aae59de0df13508.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "6c8594b9a00d372a91e05ea5e7a5c8d4"
+}
 
 [deps]
 
-source_file="res://skyboxes/space.png"
-dest_files=["res://.godot/imported/space.png-19ea076092a889a84c8ba739be79ecf7.bptc.ctex"]
+source_file="res://assets/3D/enemyWeapons/4Emplacement_1.png"
+dest_files=["res://.godot/imported/4Emplacement_1.png-91f0e4b2d0b283884aae59de0df13508.s3tc.ctex"]
 
 [params]
 
 compress/mode=2
-compress/high_quality=true
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0

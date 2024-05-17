@@ -2,22 +2,25 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c2yhfddmm0gp0"
-path.bptc="res://.godot/imported/space.png-19ea076092a889a84c8ba739be79ecf7.bptc.ctex"
+uid="uid://ora3u021pero"
+path.s3tc="res://.godot/imported/somekindarobot_0.png-af23a80b0b84667d6874fe57b2938ed2.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "f2b0e33c2a5c9e14f91258a89fce64c3"
+}
 
 [deps]
 
-source_file="res://skyboxes/space.png"
-dest_files=["res://.godot/imported/space.png-19ea076092a889a84c8ba739be79ecf7.bptc.ctex"]
+source_file="res://assets/3D/misc/somekindarobot_0.png"
+dest_files=["res://.godot/imported/somekindarobot_0.png-af23a80b0b84667d6874fe57b2938ed2.s3tc.ctex"]
 
 [params]
 
 compress/mode=2
-compress/high_quality=true
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0

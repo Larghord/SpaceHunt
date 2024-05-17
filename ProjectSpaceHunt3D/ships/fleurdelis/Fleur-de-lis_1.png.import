@@ -2,22 +2,25 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c2yhfddmm0gp0"
-path.bptc="res://.godot/imported/space.png-19ea076092a889a84c8ba739be79ecf7.bptc.ctex"
+uid="uid://c4r7xqxs6ef2m"
+path.s3tc="res://.godot/imported/Fleur-de-lis_1.png-d17dda57f30272c50f3f7b3fa8f8d93e.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "3bbd84ab401f9bb3391c1cbe6a5fe7b3"
+}
 
 [deps]
 
-source_file="res://skyboxes/space.png"
-dest_files=["res://.godot/imported/space.png-19ea076092a889a84c8ba739be79ecf7.bptc.ctex"]
+source_file="res://ships/fleurdelis/Fleur-de-lis_1.png"
+dest_files=["res://.godot/imported/Fleur-de-lis_1.png-d17dda57f30272c50f3f7b3fa8f8d93e.s3tc.ctex"]
 
 [params]
 
 compress/mode=2
-compress/high_quality=true
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0

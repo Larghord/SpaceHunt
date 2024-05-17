@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://duaygaus488hc"]
 
-[ext_resource type="Texture2D" uid="uid://c2yhfddmm0gp0" path="res://Skyboxes/space.png" id="1_72aa0"]
+[ext_resource type="Texture2D" uid="uid://c2yhfddmm0gp0" path="res://skyboxes/space.png" id="1_72aa0"]
 [ext_resource type="PackedScene" uid="uid://c7h04kuli5evh" path="res://entities/player/player.tscn" id="1_gyjt2"]
 [ext_resource type="PackedScene" uid="uid://bxhsd06l0fjib" path="res://objects/asteroid/asteroid.tscn" id="2_uuy3n"]
 

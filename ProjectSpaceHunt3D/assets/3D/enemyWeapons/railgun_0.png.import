@@ -2,22 +2,25 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c2yhfddmm0gp0"
-path.bptc="res://.godot/imported/space.png-19ea076092a889a84c8ba739be79ecf7.bptc.ctex"
+uid="uid://c75m67datn7rv"
+path.s3tc="res://.godot/imported/railgun_0.png-82640e449f22c4672b037a48ca4ee359.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "9fa7afa7e19a37017af32ae318e8586a"
+}
 
 [deps]
 
-source_file="res://skyboxes/space.png"
-dest_files=["res://.godot/imported/space.png-19ea076092a889a84c8ba739be79ecf7.bptc.ctex"]
+source_file="res://assets/3D/enemyWeapons/railgun_0.png"
+dest_files=["res://.godot/imported/railgun_0.png-82640e449f22c4672b037a48ca4ee359.s3tc.ctex"]
 
 [params]
 
 compress/mode=2
-compress/high_quality=true
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0

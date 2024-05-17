@@ -1,11 +1,11 @@
 [gd_scene load_steps=3 format=3 uid="uid://bjho6ubwiywno"]
 
-[ext_resource type="PackedScene" uid="uid://kqbtvcap110m" path="res://ships/test/PH/[PH]/Mothman.gltf" id="1_spt50"]
-[ext_resource type="PackedScene" uid="uid://c1wdys0v16anj" path="res://ships/test/PH/[PH]/Fleurdelis.gltf" id="2_3wqmx"]
+[ext_resource type="PackedScene" uid="uid://kqbtvcap110m" path="res://ships/moth/Mothman.gltf" id="1_4kswh"]
+[ext_resource type="PackedScene" uid="uid://c1wdys0v16anj" path="res://ships/fleurdelis/Fleurdelis.gltf" id="2_4ov1l"]
 
 [node name="Ships" type="Node3D"]
 
-[node name="MothAtlas" parent="." instance=ExtResource("1_spt50")]
+[node name="MothAtlas" parent="." instance=ExtResource("1_4kswh")]
 visible = false
 
-[node name="blockbench_export" parent="." instance=ExtResource("2_3wqmx")]
+[node name="blockbench_export" parent="." instance=ExtResource("2_4ov1l")]

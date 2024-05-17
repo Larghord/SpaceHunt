@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bxhsd06l0fjib"]
 
-[ext_resource type="PackedScene" uid="uid://56l44wgl8kwl" path="res://ships/test/PH/[PH]/asteroid.gltf" id="1_p5jcq"]
+[ext_resource type="PackedScene" uid="uid://56l44wgl8kwl" path="res://objects/asteroid/asteroid.gltf" id="1_p5jcq"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_083kv"]
 size = Vector3(0.582947, 0.351593, 0.59137)
