@@ -9,3 +9,4 @@
 visible = false
 
 [node name="blockbench_export" parent="." instance=ExtResource("2_4ov1l")]
+visible = false
