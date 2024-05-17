@@ -6,6 +6,6 @@
 [node name="Ships" type="Node3D"]
 
 [node name="MothAtlas" parent="." instance=ExtResource("1_4kswh")]
-visible = false
 
 [node name="blockbench_export" parent="." instance=ExtResource("2_4ov1l")]
+visible = false
