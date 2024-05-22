@@ -1,0 +1,76 @@
+[gd_scene load_steps=12 format=3 uid="uid://beu88k3jiwjss"]
+
+[ext_resource type="Texture2D" uid="uid://bastiw0t4yu58" path="res://assets/particles/engine_particles/alpha_curve_idle.tres" id="1_y4sbe"]
+
+[sub_resource type="GDScript" id="GDScript_80r1t"]
+script/source = "extends Node3D
+
+@onready var engine_particles = $GPUParticles3D
+var current_curve;
+
+func _process(delta: float) -> void:
+	var owner = self.get_parent().get_parent().get_parent()
+	if owner.name == \"Player\":
+		if owner.is_forward:
+			engine_particles.lifetime = 7.5
+		elif owner.is_backward:
+			engine_particles.lifetime = 2.5
+		elif owner.is_idle:
+			engine_particles.lifetime = 5.0
+			
+	
+"
+
+[sub_resource type="Gradient" id="Gradient_guqeg"]
+colors = PackedColorArray(0, 0, 0.745098, 1, 0.216303, 1, 0.999349, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_0d6xi"]
+gradient = SubResource("Gradient_guqeg")
+
+[sub_resource type="Curve" id="Curve_idwpe"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.933824, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_gkok1"]
+curve = SubResource("Curve_idwpe")
+
+[sub_resource type="Curve" id="Curve_fckrc"]
+min_value = -200.0
+max_value = 200.0
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_mqhac"]
+curve = SubResource("Curve_fckrc")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_j4hm4"]
+lifetime_randomness = 0.8
+emission_shape_scale = Vector3(2, 2, 2)
+emission_shape = 1
+emission_sphere_radius = 0.1
+gravity = Vector3(0, 0, 8)
+tangential_accel_curve = SubResource("CurveTexture_mqhac")
+scale_curve = SubResource("CurveTexture_gkok1")
+color_ramp = SubResource("GradientTexture1D_0d6xi")
+alpha_curve = ExtResource("1_y4sbe")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kutbh"]
+transparency = 1
+vertex_color_use_as_albedo = true
+
+[sub_resource type="BoxMesh" id="BoxMesh_6aisr"]
+material = SubResource("StandardMaterial3D_kutbh")
+size = Vector3(2, 2, 2)
+
+[node name="EngineParticle" type="Node3D"]
+script = SubResource("GDScript_80r1t")
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+transform = Transform3D(0.02, 0, 0, 0, 0.02, 0, 0, 0, 0.02, 0, 0, 0)
+amount = 500
+lifetime = 2.5
+speed_scale = 2.0
+local_coords = true
+trail_enabled = true
+process_material = SubResource("ParticleProcessMaterial_j4hm4")
+draw_pass_1 = SubResource("BoxMesh_6aisr")

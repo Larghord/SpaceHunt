@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://duaygaus488hc"]
 
-[ext_resource type="Texture2D" uid="uid://c2yhfddmm0gp0" path="res://skyboxes/space.png" id="1_72aa0"]
+[ext_resource type="Texture2D" uid="uid://c2yhfddmm0gp0" path="res://assets/skyboxes/space.png" id="1_72aa0"]
 [ext_resource type="PackedScene" uid="uid://c7h04kuli5evh" path="res://entities/player/player.tscn" id="1_gyjt2"]
-[ext_resource type="PackedScene" uid="uid://bxhsd06l0fjib" path="res://objects/asteroid/asteroid.tscn" id="2_uuy3n"]
+[ext_resource type="PackedScene" uid="uid://bxhsd06l0fjib" path="res://assets/objects/asteroid/asteroid.tscn" id="2_uuy3n"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_xm1ad"]
 panorama = ExtResource("1_72aa0")
@@ -34,8 +34,11 @@ transform = Transform3D(1, 0, 0, 0, 0.712051, 0.702128, 0, -0.702128, 0.712051, 
 light_volumetric_fog_energy = 1.27
 
 [node name="DirectionalLight3D2" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-1, 8.74228e-08, -5.15606e-15, 6.49525e-08, 0.74297, -0.669325, -5.85143e-08, -0.669325, -0.74297, 0, -4.96092, -14.0474)
+transform = Transform3D(-1, 8.74228e-08, 3.39238e-14, 6.49525e-08, 0.74297, -0.669325, -5.85143e-08, -0.669325, -0.74297, 0, -4.96092, -14.0474)
 light_volumetric_fog_energy = 1.27
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.265253, 0.964179, 0, -0.964179, 0.265253, 0, 7.58802, -0.625179)
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 11.3087, -3.09028)
+projection = 1
+current = true
+size = 9.347

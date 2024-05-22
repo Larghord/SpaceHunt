@@ -1,0 +1,41 @@
+[gd_resource type="ParticleProcessMaterial" load_steps=9 format=3 uid="uid://hlegfqfsjdik"]
+
+[sub_resource type="Curve" id="Curve_ddbih"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.492647, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_53txr"]
+curve = SubResource("Curve_ddbih")
+
+[sub_resource type="Gradient" id="Gradient_guqeg"]
+colors = PackedColorArray(0, 0, 0.745098, 1, 0.216303, 1, 0.999349, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_0d6xi"]
+gradient = SubResource("Gradient_guqeg")
+
+[sub_resource type="Curve" id="Curve_idwpe"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.933824, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_gkok1"]
+curve = SubResource("Curve_idwpe")
+
+[sub_resource type="Curve" id="Curve_fckrc"]
+min_value = -200.0
+max_value = 200.0
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_mqhac"]
+curve = SubResource("Curve_fckrc")
+
+[resource]
+lifetime_randomness = 0.8
+emission_shape_scale = Vector3(2, 2, 2)
+emission_shape = 1
+emission_sphere_radius = 0.1
+gravity = Vector3(0, 0, 8)
+tangential_accel_curve = SubResource("CurveTexture_mqhac")
+scale_curve = SubResource("CurveTexture_gkok1")
+color_ramp = SubResource("GradientTexture1D_0d6xi")
+alpha_curve = SubResource("CurveTexture_53txr")

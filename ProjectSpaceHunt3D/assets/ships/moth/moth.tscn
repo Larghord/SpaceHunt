@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://btvvfiysfnxub"]
+
+[ext_resource type="PackedScene" uid="uid://cjey1hg14wqlc" path="res://assets/ships/moth/Mothman.gltf" id="1_adtue"]
+[ext_resource type="PackedScene" uid="uid://beu88k3jiwjss" path="res://assets/particles/engine_particles/engine_particles.tscn" id="2_o2spn"]
+
+[node name="Moth" type="Node3D"]
+
+[node name="MothAtlas" parent="." instance=ExtResource("1_adtue")]
+
+[node name="EngineParticle" parent="MothAtlas" instance=ExtResource("2_o2spn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.102377, 0.0589379, 0.189716)
+
+[node name="EngineParticle2" parent="MothAtlas" instance=ExtResource("2_o2spn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.102, 0.059, 0.19)
+
+[node name="ShipComponent" type="Node" parent="."]

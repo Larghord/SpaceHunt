@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://c7h04kuli5evh"]
 
-[ext_resource type="PackedScene" uid="uid://bjho6ubwiywno" path="res://ships/ships.tscn" id="1_fwtus"]
 [ext_resource type="Script" path="res://entities/player/player.gd" id="1_t826a"]
+[ext_resource type="PackedScene" uid="uid://btvvfiysfnxub" path="res://assets/ships/moth/moth.tscn" id="2_o4v2d"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_m0d7b"]
 size = Vector3(0.593384, 0.263672, 0.592712)
@@ -9,7 +9,8 @@ size = Vector3(0.593384, 0.263672, 0.592712)
 [node name="Player" type="CharacterBody3D"]
 script = ExtResource("1_t826a")
 
-[node name="Ships" parent="." instance=ExtResource("1_fwtus")]
+[node name="Moth" parent="." instance=ExtResource("2_o4v2d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0198265, -0.00518009, 0.00175047)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0040634, 0.0820313, -0.0303597)
